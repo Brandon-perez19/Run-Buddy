@@ -7,7 +7,6 @@
 body {
     font-family: Helvetica, Arial, sans-serif; 
     color: #39a6b2;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* apply styles to <header> */
@@ -67,6 +66,9 @@ footer a {
     color: #024e76
 }
 
+section {
+    padding: 60px;
+  }
 /* Hero Style Start */
 .hero {
     background-image: url("file:///Users/brandonperez/Desktop/projects/run-buddy/assets/images/hero-bg.jpeg");
@@ -77,18 +79,12 @@ footer a {
 }
 /* Hero Style End */
 
-section {
-    padding: 60px;
-}
-
 .hero-form {
-    color:#024e76;
+    border: 3px solid #024e76;
     background-color: #fce138;
-    width: 500px;
     padding: 20px;
-    border-style: solid;
-    border-width: 3px;
-    border-color: #024e76;
+    width: 500px;
+    color:#024e76;
     position: absolute;
     bottom: 120px;
     right: 140px;
@@ -141,32 +137,14 @@ section {
     text-align: center;
     background: #fce138;
   }
-
-  .section-title {
-    font-size: 55px;
-    color: #024e76;
-    margin-bottom: 35px;
-    padding: 0 100px 20px 100px;
-    display: inline-block;
-    /* added inline-block to be a combination of both block and inline elements */
-    border-bottom: 3px solid;
-  }
   
-  .primary-border {
-    border-color: #fce138;
-  }
-  
-  .secondary-border {
-    border-color: #39a6b2;
-  }
-
   .steps div {
       margin-bottom:80px;
   }
 
   .steps img {
       width: 15%;
-      margin: 10px 0
+      margin: 10px 0;
   }
 
   .steps h3 {
@@ -184,9 +162,26 @@ section {
       font-size: 38px;
   }
 
+  .section-title {
+    font-size: 55px;
+    color: #024e76;
+    margin-bottom: 35px;
+    padding: 0 100px 20px 100px;
+    display: inline-block;
+    /* added inline-block to be a combination of both block and inline elements */
+    border-bottom: 3px solid;
+  }
+
+  .primary-border {
+    border-color: #fce138;
+  }
+  
+  .secondary-border {
+    border-color: #39a6b2;
+  }
+
   .trainers {
       text-align: center;
-      overflow: auto;
   }
 
   .trainer {
@@ -200,14 +195,12 @@ section {
   .trainer img {
       width: 35%;
       float: left;
-      overflow: auto;
   }
 
   .trainer-bio {
       padding: 35px;
       float: left;
       width: 65%;
-      overflow: auto;
   }
 
   .trainer-bio h3 {
@@ -264,7 +257,7 @@ section {
       margin: 20px 0;
       line-height: 1.5;
       font-size: 20px;
-      font-style: normail;
+      font-style: normal;
   }
 
   .contact-info a {
