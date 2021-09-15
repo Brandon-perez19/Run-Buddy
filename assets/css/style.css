@@ -12,7 +12,10 @@ body {
 /* apply styles to <header> */
 header {
     padding: 20px 35px;
-    background-color: #39a6b2
+    background-color: #39a6b2;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
 }
 
 header h1 {
@@ -20,7 +23,6 @@ header h1 {
     font-size: 36px;
     color: #fce138;
     margin: 0;
-    display: inline;
 }
 
 header a {
@@ -29,7 +31,6 @@ header a {
 }
 
 header nav {
-    float: right;
     margin: 7px 0;
 }
 
@@ -71,7 +72,7 @@ section {
   }
 /* Hero Style Start */
 .hero {
-    background-image: url("file:///Users/brandonperez/Desktop/projects/run-buddy/assets/images/hero-bg.jpeg");
+    background-image: url(../images/hero-bg.jpeg);
     height: 600px;
     background-size: cover;
     background-position: center;
