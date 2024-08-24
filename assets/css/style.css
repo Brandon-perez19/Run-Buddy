@@ -4,16 +4,31 @@
     --tertiary-color: #39a6b2;
 }
 
-*{
+/* 
+    Defines custom CSS variables for the primary, secondary, and tertiary colors, 
+    which are used throughout the stylesheet for consistency and easy maintenance.
+*/
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* 
+    Resets margin and padding for all elements to ensure consistency across browsers. 
+    Sets box-sizing to border-box to include padding and border within the element's width and height.
+*/
+
 body {
-    font-family: Helvetica, Arial, sans-serif; 
+    font-family: Helvetica, Arial, sans-serif;
     color: var(--tertiary-color);
 }
+
+/* 
+    Applies a sans-serif font stack for the entire document and sets the text color 
+    to the tertiary color defined in the root.
+*/
 
 header {
     padding: 20px 35px;
@@ -24,12 +39,18 @@ header {
     background-color: var(--tertiary-color);
     display: flex;
     justify-content: space-between;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 9999;
 }
+
+/* 
+    Styles the header with padding, a background image, and a fixed background attachment. 
+    The header is displayed as a flex container, allowing for flexible layout. 
+    It is also made sticky, so it stays at the top of the page as the user scrolls.
+*/
 
 header h1 {
     font-weight: bold;
@@ -39,14 +60,25 @@ header h1 {
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+/* 
+    Styles the main heading (h1) in the header with a bold font, large size, and a color 
+    from the primary color variable. Adds a text shadow for a subtle 3D effect.
+*/
+
 header a {
     text-decoration: none;
     color: var(--primary-color);
 }
 
+/* 
+    Removes underline from links in the header and sets their color to the primary color.
+*/
+
 header nav {
     margin: 7px 0;
 }
+
+/* Adds a vertical margin to the navigation element in the header. */
 
 header nav ul {
     display: flex;
@@ -56,6 +88,11 @@ header nav ul {
     list-style: none;
 }
 
+/* 
+    Styles the unordered list in the navigation as a flex container, 
+    allowing list items to wrap and align evenly. Removes default list bullets.
+*/
+
 header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
@@ -63,12 +100,22 @@ header nav ul li a {
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+/* 
+    Styles the links in the navigation menu with padding, lighter font weight, 
+    responsive font size, and a text shadow.
+*/
+
 header nav ul li a:hover {
     background: var(--primary-color);
     color: var(--secondary-color);
     border-radius: 15px;
     text-shadow: none;
 }
+
+/* 
+    Adds hover effects to the navigation links, changing the background to the primary color, 
+    the text color to the secondary color, and removing the text shadow.
+*/
 
 footer {
     display: flex;
@@ -79,25 +126,47 @@ footer {
     padding: 40px 35px;
 }
 
+/* 
+    Styles the footer as a flex container with space-between alignment, allowing the content to spread evenly. 
+    The footer has a background color using the primary color variable, with padding for spacing.
+*/
+
 footer h2 {
     color: var(--secondary-color);
     font-size: 30px;
     margin: 0;
 }
 
+/* 
+    Styles the heading in the footer with a secondary color, large font size, and no margin.
+*/
+
 footer div {
     line-height: 1.5;
     text-align: right;
 }
 
+/* 
+    Styles the div in the footer with a line height for spacing and right-aligned text.
+*/
+
 footer a {
-    color: var(--secondary-color)
+    color: var(--secondary-color);
 }
+
+/* 
+    Sets the color of links in the footer to the secondary color.
+*/
 
 section {
     padding: 60px;
 }
-/* Hero Style Start */
+
+/* 
+    Applies padding to all section elements, providing spacing around the content.
+*/
+
+/* Hero Section */
 .hero {
     display: flex;
     justify-content: center;
@@ -109,6 +178,11 @@ section {
     align-items: flex-start;
 }
 
+/* 
+    Styles the hero section as a flex container, with a centered layout. 
+    It uses a background image that is fixed and covers the entire section, with the position adjusted for visual effect.
+*/
+
 .hero-cta {
     width: 35%;
     text-align: right;
@@ -118,6 +192,11 @@ section {
     line-height: 1.2;
 }
 
+/* 
+    Styles the call-to-action (CTA) section within the hero with a specific width, 
+    right-aligned text, white color, and controlled font size and line height.
+*/
+
 .hero-cta h2 {
     font-style: italic;
     font-size: 55px;
@@ -125,80 +204,136 @@ section {
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+/* 
+    Styles the heading within the CTA section with italicized text, a large font size, 
+    primary color, and a text shadow.
+*/
+
 .hero-form {
     border: 3px solid var(--secondary-color);
     border-radius: 15px;
-    background-color: rgba( 252,225,56, 0.8);
+    background-color: rgba(252, 225, 56, 0.8);
     padding: 20px;
     width: 40%;
     margin: 3.5%;
-    color:var(--secondary-color);
+    color: var(--secondary-color);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+
+/* 
+    Styles the form within the hero section with a border, rounded corners, 
+    semi-transparent background, padding, specific width, and box shadow.
+*/
 
 .hero-form h3 {
     font-size: 24px;
     margin: 0;
 }
 
+/* 
+    Sets the font size of the h3 element within the form and removes the margin.
+*/
+
 .hero-form p {
-    margin:5px 0 15px 0;
+    margin: 5px 0 15px 0;
 }
 
-.form-input{
-    background-color: rgba(255,255,255, 0.75);
-    border:1px solid var(--secondary-color);
+/* 
+    Adds margin to the paragraphs within the form for spacing.
+*/
+
+.form-input {
+    background-color: rgba(255, 255, 255, 0.75);
+    border: 1px solid var(--secondary-color);
     border-radius: 10px;
-    display:block;
-    padding:7px 15px;
+    display: block;
+    padding: 7px 15px;
     font-size: 16px;
     color: var(--secondary-color);
     width: 100%;
-    margin-bottom:15px;
+    margin-bottom: 15px;
 }
 
+/* 
+    Styles form input fields with a semi-transparent background, 
+    border, rounded corners, padding, and a specific width.
+*/
+
 .form-input:focus {
-    background-color: rgba(255,255,255, 1);
+    background-color: rgba(255, 255, 255, 1);
     outline: none;
 }
 
-.checkbox-wrapper input, .radio-wrapper input {
+/* 
+    Changes the background color of input fields to fully opaque white 
+    when they are focused, and removes the outline.
+*/
+
+.checkbox-wrapper input,
+.radio-wrapper input {
     opacity: 0;
 }
 
-.checkbox-wrapper label, .radio-wrapper label {
+/* 
+    Hides the native checkbox and radio input elements by setting their opacity to 0.
+*/
+
+.checkbox-wrapper label,
+.radio-wrapper label {
     position: relative;
     left: 10px;
     margin: 10px;
     line-height: 1.6;
 }
 
-.checkbox-wrapper label::before, .radio-wrapper label::before {
+/* 
+    Styles the labels for checkboxes and radio buttons with relative positioning, 
+    margin, and line height for spacing.
+*/
+
+.checkbox-wrapper label::before,
+.radio-wrapper label::before {
     content: "";
     height: 20px;
     width: 20px;
-    background: rgba(255, 255, 255, 0.75);  
-    border: 1px solid var(--secondary-color);  
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid var(--secondary-color);
     position: absolute;
     top: -4px;
     left: -30px;
 }
 
+/* 
+    Creates a custom styled box before the label for checkboxes and radio buttons, 
+    with a background, border, and positioning.
+*/
+
 .radio-wrapper label::before {
     border-radius: 50%;
 }
+
+/* 
+    Makes the custom radio button indicator circular.
+*/
 
 .radio-wrapper label::after {
     content: "";
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background-image: radial-gradient(circle, var(--tertiary-color), var(--secondary-color));
+    background-image: radial-gradient(circle,
+            var(--tertiary-color),
+            var(--secondary-color));
     position: absolute;
     left: -29px;
     top: -3px;
     transform: rotate(-58deg);
 }
+
+/* 
+    Creates the filled circle that appears inside the custom radio button when selected, 
+    with a radial gradient and positioning.
+*/
 
 .checkbox-wrapper label::after {
     content: "";
@@ -212,22 +347,38 @@ section {
     transform: rotate(-58deg);
 }
 
-.checkbox-wrapper input + label::after, 
-.radio-wrapper input + label::after {
+/* 
+    Creates a checkmark symbol that appears inside the custom checkbox when selected.
+*/
+
+.checkbox-wrapper input+label::after,
+.radio-wrapper input+label::after {
     content: none;
 }
 
-.checkbox-wrapper input:checked + label::after, 
-.radio-wrapper input:checked + label::after {
+/* 
+    Hides the checkmark and filled circle unless the input is checked.
+*/
+
+.checkbox-wrapper input:checked+label::after,
+.radio-wrapper input:checked+label::after {
     content: "";
 }
+
+/* 
+    Shows the checkmark or filled circle when the input is checked.
+*/
 
 .hero-form label {
     margin: 0 5px;
 }
 
+/* 
+    Adds margin to the form labels within the hero section.
+*/
+
 .hero-form button {
-    color:var(--primary-color);
+    color: var(--primary-color);
     background-color: var(--secondary-color);
     border: none;
     border-radius: 10px;
@@ -235,9 +386,18 @@ section {
     font-size: 16px;
 }
 
+/* 
+    Styles the submit button within the hero form with the primary color for text, 
+    secondary color for background, no border, rounded corners, and padding.
+*/
+
 .hero-form button:hover {
-    background-color: var(--tertiary-color);  
+    background-color: var(--tertiary-color);
 }
+
+/* 
+    Changes the button background color to the tertiary color on hover.
+*/
 
 .section-title {
     font-size: 48px;
@@ -249,26 +409,48 @@ section {
     width: 50%;
 }
 
+/* 
+    Styles section titles with a large font, secondary color, bottom border, 
+    padding, centered alignment, and a specific width.
+*/
+
 .primary-border {
     border-color: var(--primary-color);
 }
 
+/* 
+    Applies the primary color to the bottom border of elements with this class.
+*/
+
 .secondary-border {
     border-color: var(--tertiary-color);
 }
+
+/* 
+    Applies the tertiary color to the bottom border of elements with this class.
+*/
 
 .intro p {
     line-height: 1.7;
     color: var(--tertiary-color);
     width: 80%;
     font-size: 20px;
-    margin:0 auto;
+    margin: 0 auto;
     text-align: center;
 }
+
+/* 
+    Styles introductory paragraphs with increased line height, 
+    tertiary color, specified width, and centered text.
+*/
 
 .steps {
     background: var(--primary-color);
 }
+
+/* 
+    Sets the background color of the steps section to the primary color.
+*/
 
 .step {
     margin: 50px auto;
@@ -280,46 +462,87 @@ section {
     justify-content: space-between;
 }
 
+/* 
+    Styles individual step sections with margin, padding, specified width, 
+    and a flexible layout to align items centrally.
+*/
+
 .step:not(:last-child) {
     border-bottom: 1px solid var(--tertiary-color);
 }
 
+/* 
+    Adds a bottom border to all step elements except the last one.
+*/
+
 .step h3 {
-    color:var(--secondary-color);
+    color: var(--secondary-color);
     font-size: 46px;
     flex: 1 30%;
 }
+
+/* 
+    Styles step headings with secondary color, large font size, 
+    and specifies flex behavior for layout.
+*/
 
 .step-info {
     flex: 2 70%;
     display: flex;
     flex-wrap: wrap;
-    align-items:center;
+    align-items: center;
 }
+
+/* 
+    Styles the step information container with flex properties to organize 
+    its contents and ensure proper alignment and wrapping.
+*/
 
 .step-img {
     flex: 1 12%;
     margin-right: 20px;
 }
 
+/* 
+    Styles the container for step images with a specific flex behavior 
+    and right margin for spacing.
+*/
+
 .step-img img {
     max-width: 100%;
 }
 
+/* 
+    Ensures that step images do not exceed their container's width.
+*/
+
 .step-text {
     flex: 12;
 }
+
+/* 
+    Sets the flex behavior of the step text container.
+*/
 
 .step-text p {
     color: var(--tertiary-color);
     font-size: 18px;
 }
 
+/* 
+    Styles step text paragraphs with tertiary color and medium font size.
+*/
+
 .step-text h4 {
     font-size: 26px;
     line-height: 1.5;
     color: var(--secondary-color);
 }
+
+/* 
+    Styles subheadings within the step text with a large font size, 
+    increased line height, and secondary color.
+*/
 
 .trainers {
     width: 100%;
@@ -329,6 +552,11 @@ section {
     justify-content: space-around;
 }
 
+/* 
+    Styles the container for trainer profiles as a flex container, 
+    ensuring the profiles are evenly distributed and wrapped when necessary.
+*/
+
 .trainer {
     margin: 20px;
     background: var(--secondary-color);
@@ -336,18 +564,35 @@ section {
     flex: 1;
 }
 
+/* 
+    Styles individual trainer profiles with margin, background color, 
+    text color, and flex behavior for layout.
+*/
+
 .trainer img {
-    width: 100%
+    width: 100%;
 }
+
+/* 
+    Ensures trainer images take up the full width of their container.
+*/
 
 .trainer-bio {
     padding: 25px;
     line-height: 1.3;
 }
 
+/* 
+    Adds padding and line height to the trainer bio section for spacing.
+*/
+
 .trainer-bio h3 {
     font-size: 28px;
 }
+
+/* 
+    Styles the trainer name heading with a medium-large font size.
+*/
 
 .trainer-bio h4 {
     font-weight: lighter;
@@ -355,51 +600,96 @@ section {
     margin-bottom: 15px;
 }
 
+/* 
+    Styles the trainer role subheading with lighter font weight, 
+    medium font size, and bottom margin for spacing.
+*/
+
 .trainer-bio p {
     font-size: 17px;
 }
+
+/* 
+    Sets the font size for the paragraphs in the trainer bio.
+*/
 
 .contact {
     background: var(--secondary-color);
 }
 
+/* 
+    Sets the background color of the contact section to the secondary color.
+*/
+
 .contact h2 {
     color: var(--primary-color);
 }
 
-.contact-info{
+/* 
+    Styles the contact section heading with the primary color.
+*/
+
+.contact-info {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.contact-info > * {
+/* 
+    Styles the contact information container as a flexbox, 
+    allowing content to be spaced evenly and wrapped as necessary.
+*/
+
+.contact-info>* {
     flex: 1;
     margin: 15px;
 }
+
+/* 
+    Applies flex behavior and margin to all direct children of the contact-info container.
+*/
 
 .contact-info iframe {
     height: 400px;
 }
 
+/* 
+    Sets the height of the embedded Google Maps iframe in the contact section.
+*/
+
 .contact-info div {
     color: white;
 }
 
+/* 
+    Sets the text color to white for all div elements in the contact info section.
+*/
+
 .contact-info h3 {
-    color:var(--primary-color);
+    color: var(--primary-color);
     font-size: 32px;
 }
 
-.contact-info p, .contact-info address {
+/* 
+    Styles the h3 headings in the contact info section with the primary color and large font size.
+*/
+
+.contact-info p,
+.contact-info address {
     margin: 20px 0;
     line-height: 1.5;
     font-size: 16px;
     font-style: normal;
 }
 
-.contact-form input, .contact-form textarea {
-    background-color: rgba(255,255,255, 0.75);
+/* 
+    Styles paragraphs and address elements in the contact info section with margin, 
+    line height, font size, and normal font style.
+*/
+
+.contact-form input,
+.contact-form textarea {
+    background-color: rgba(255, 255, 255, 0.75);
     border: 1px solid var(--secondary-color);
     border-radius: 10px;
     display: block;
@@ -411,10 +701,21 @@ section {
     margin-top: 5px;
 }
 
-.contact-form input:focus, .contact-form textarea:focus {
-    background-color: rgba(255,255,255, 1);
+/* 
+    Styles input fields and text areas in the contact form with a semi-transparent background, 
+    border, rounded corners, padding, and full width.
+*/
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    background-color: rgba(255, 255, 255, 1);
     outline: none;
 }
+
+/* 
+    Changes the background of input fields and text areas to fully opaque white 
+    when they are focused, and removes the outline.
+*/
 
 .contact-form button {
     width: 100%;
@@ -422,31 +723,56 @@ section {
     border-radius: 10px;
     background: var(--primary-color);
     color: var(--secondary-color);
-    text-align:center;
+    text-align: center;
     padding: 15px 0;
-    font-size:16px;
+    font-size: 16px;
 }
+
+/* 
+    Styles the submit button in the contact form with full width, 
+    no border, rounded corners, primary color background, secondary color text, and centered text.
+*/
 
 .contact-form button:hover {
     color: var(--primary-color);
     background: var(--tertiary-color);
 }
 
+/* 
+    Changes the button's background to the tertiary color and text color to primary on hover.
+*/
+
 .contact-info a {
-    color:var(--primary-color);
+    color: var(--primary-color);
 }
+
+/* 
+    Sets the color of links in the contact info section to the primary color.
+*/
 
 .text-left {
     text-align: left;
 }
 
+/* 
+    Utility class to align text to the left.
+*/
+
 .text-right {
     text-align: right;
 }
 
+/* 
+    Utility class to align text to the right.
+*/
+
 .flex-row {
     display: flex;
 }
+
+/* 
+    Utility class to create a flex container for a row layout.
+*/
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
@@ -471,7 +797,8 @@ section {
         font-size: 20px;
     }
 
-    .hero-cta, .hero-form {
+    .hero-cta,
+    .hero-form {
         width: 100%;
     }
 
@@ -491,28 +818,35 @@ section {
         flex: 1 100%;
     }
 
-    footer h2, footer div{
+    footer h2,
+    footer div {
         text-align: center;
         width: 100%;
     }
 }
 
-  /* MEDIA QUERY FOR TABLETS AND SMALLER */
+/* 
+    Media query for screens with a maximum width of 980px, 
+    adjusts layout for smaller desktop screens, including centering text and resizing elements.
+*/
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
     section {
         padding: 30px 15px;
     }
+
     .step h3 {
         flex: 1 100%;
         text-align: center;
     }
-    
+
     .step-info {
         flex: 2 100%;
         text-align: center;
         justify-content: center;
     }
-    
+
     .step-img {
         flex: 0 32%;
         margin-right: 0;
@@ -521,33 +855,38 @@ section {
     }
 
     .step-text {
-        flex: 100%;  
+        flex: 100%;
     }
 }
 
-  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+/* 
+    Media query for tablets with a maximum width of 768px, 
+    adjusts padding, text alignment, and flex behavior for better readability on smaller screens.
+*/
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
     .hero-form button {
         width: 100%;
     }
-    
+
     .section-title {
         width: 95%;
     }
-    
+
     .intro p {
         width: 100%;
     }
-    
+
     .trainer {
         flex: 0 100%;
     }
-    
+
     .contact-info {
         text-align: center;
     }
-    
-    .contact-info > * {
+
+    .contact-info>* {
         flex: 0 100%;
     }
 
@@ -555,3 +894,8 @@ section {
         order: 3;
     }
 }
+
+/* 
+    Media query for mobile devices with a maximum width of 575px, 
+    further adjusts layout for readability and usability on small screens.
+*/

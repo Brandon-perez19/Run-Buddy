@@ -4,6 +4,11 @@
     text-align: center;
     margin-bottom: 40px;
 }
+/* 
+    Styles the hero section with the background image aligned at the bottom. 
+    The height is set to auto, allowing the section to adjust based on its content. 
+    The text inside the hero section is centered, and a bottom margin of 40px is added to create space below.
+*/
 
 .page-title {
     color: #fce138;
@@ -14,28 +19,52 @@
     font-size: 42px;
     font-style: italic;
 }
+/* 
+    Styles the page title with a specific color (yellow), 
+    makes it an inline-block element to allow padding and border, 
+    adds a bottom border for emphasis, and applies padding around the text. 
+    The text is styled with a normal font weight, large font size, and italic style.
+*/
 
 .secondary-content {
     width: 80%;
     margin: 0 auto;
     color: #024e76;
 }
+/* 
+    Styles the secondary content section with a width of 80% and centers it horizontally using auto margins. 
+    The text color is set to a dark blue (#024e76).
+*/
 
 .secondary-content h3 {
     font-size: 25px;
     margin: 20px 0;
 }
+/* 
+    Styles h3 headings within the secondary content with a font size of 25px and adds vertical margins for spacing.
+*/
 
 .secondary-content p {
     font-size: 16px;
     line-height: 1.5;
     margin: 20px 0;
 }
+/* 
+    Styles paragraphs within the secondary content with a font size of 16px, 
+    increased line height for readability, and vertical margins for spacing.
+*/
 
 .secondary-content ul {
     margin: 15px 20px;
 }
+/* 
+    Adds margin to unordered lists within the secondary content for spacing.
+*/
+
 .secondary-content li {
-    color:#39a6b2;
-    margin: 10px, 0
+    color: #39a6b2;
+    margin: 10px 0;
 }
+/* 
+    Styles list items within the secondary content with a teal color (#39a6b2) and vertical margin for spacing.
+*/
